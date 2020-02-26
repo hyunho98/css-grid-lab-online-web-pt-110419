@@ -9,7 +9,7 @@ body {
   width: 100vw;
   /* your properties here */
   display: grid;
-  grid-template: [header-start] 1fr [header-end] 1fr 1fr 1fr / repeat(3, 1fr);
+  grid-template: [header-start] 1fr 1fr 1fr [header-end] 1fr / repeat(3, 1fr);
 }
 
 .grid-item {
@@ -19,5 +19,5 @@ body {
 
 /* add the .bigItem class */
 .bigItem {
-  grid-area: header-start / 1 / 1 / 4;
+  grid-area: header-start / 1 / header-end / 4;
 }
